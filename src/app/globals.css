@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-hennix-black text-white font-sans antialiased;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center justify-center px-8 py-3.5 bg-hennix-orange text-white font-semibold rounded-lg
+           hover:bg-hennix-orange-light transition-all duration-300 transform hover:scale-105 hover:shadow-lg
+           hover:shadow-hennix-orange/30 active:scale-95;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center px-8 py-3.5 border-2 border-hennix-orange text-hennix-orange
+           font-semibold rounded-lg hover:bg-hennix-orange hover:text-white transition-all duration-300
+           transform hover:scale-105 active:scale-95;
+  }
+
+  .btn-small {
+    @apply inline-flex items-center justify-center px-5 py-2.5 bg-hennix-orange text-white font-semibold
+           rounded-lg hover:bg-hennix-orange-light transition-all duration-300 transform hover:scale-105
+           active:scale-95 text-sm;
+  }
+
+  .card {
+    @apply bg-hennix-dark border border-hennix-gray rounded-2xl overflow-hidden transition-all duration-300
+           hover:border-hennix-orange/50 hover:shadow-xl hover:shadow-hennix-orange/10 hover:-translate-y-1;
+  }
+
+  .section-heading {
+    @apply text-3xl md:text-4xl font-bold text-white;
+  }
+
+  .section-subheading {
+    @apply text-lg text-gray-400 mt-3 max-w-2xl;
+  }
+
+  .input-field {
+    @apply w-full px-4 py-3 bg-hennix-gray border border-hennix-gray-light rounded-lg text-white
+           placeholder-gray-500 focus:outline-none focus:border-hennix-orange focus:ring-1
+           focus:ring-hennix-orange transition-colors;
+  }
+
+  .badge {
+    @apply inline-block px-3 py-1 bg-hennix-orange text-white text-xs font-bold uppercase rounded-full tracking-wider;
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-hennix-orange to-hennix-orange-light;
+  }
+}
