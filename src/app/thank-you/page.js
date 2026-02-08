@@ -23,7 +23,7 @@ function ThankYouContent() {
             viewBox="0 0 24 24"
           >  <svg
             className="w-10 h-10 text-green-500"
-            viewBox="0 0 24"
+            viewBox="0"
           ></svg>
             <path
               strokeLinecap="round"
