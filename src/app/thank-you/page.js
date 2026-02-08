@@ -21,7 +21,7 @@ function ThankYouContent() {
             fill="none"
             stroke="currentColor"
             viewBox="0 0 24 24"
-          >  <svg className="w-1 h-10 text-green-500"></svg>
+          > 
             <path
               strokeLinecap="round"
               strokeLinejoin="round"
