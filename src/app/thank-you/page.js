@@ -24,7 +24,7 @@ function ThankYouContent() {
           >  <svg
             className="w-10 h-10 text-green-500"
             fill="none"
-            stroke="Color"
+            stroke=""
             viewBox="0 0 24 24"
           ></svg>
             <path
